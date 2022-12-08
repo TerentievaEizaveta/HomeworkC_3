@@ -2,9 +2,28 @@
 /* Задача 19
 Напишите программу, которая принимает на вход пятизначное число и 
 проверяет, является ли оно палиндромом.*/
+/*
 Console.Clear();
 
+void Polindrom(int num)
+{
+    int number = num;
+    int InverseNumber = 0;
 
+    while(number > 0)
+    {   
+        int remainder = number % 10;
+        InverseNumber  = InverseNumber * 10 + remainder;
+        number = number / 10;
+    }
+    if  (num == InverseNumber)  Console.WriteLine("yes");
+    else Console.WriteLine("no");    
+}
+Console.WriteLine("Input a number");
+int num=Convert.ToInt32(Console.ReadLine());
+
+Polindrom(num);
+*/
 /*Задача 21
 Напишите программу, которая принимает на вход координаты двух точек 
 и находит расстояние между ними в 3D пространстве.*/
